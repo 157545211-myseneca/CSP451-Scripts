@@ -15,6 +15,15 @@ Student_vnet_address=""
 Client_Subnet_name=""
 Client_Subnet_address=""
 
+RG_NAME="Student-RG-1344549"
+LOCATION="canadacentral"
+ID="25"
+
+Student_vnet_name="Student-1344549-vnet"
+Student_vnet_address="10.4.146.0/24"
+Client_Subnet_name="Virtual-Desktop-Client"
+Client_Subnet_address="10.4.146.0/24"
+
 # ---------------------------------------------------
 # Networking - Virtual Networks
 Router_vnet_name="Router-$ID"
