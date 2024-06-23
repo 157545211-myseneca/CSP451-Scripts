@@ -9,7 +9,7 @@
 # Windows VM Credentials
 
 USER_NAME="vilaskumarpatel"
-ADMIN_PW="P@ssw0rd"
+ADMIN_PW="P@ssw0rd1234"
 
 # ---------------------------------------------------
 # sshkey pair names
