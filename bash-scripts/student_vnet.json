@@ -1,0 +1,111 @@
+{
+  "addressSpace": {
+    "addressPrefixes": [
+      "10.4.146.0/24"
+    ]
+  },
+  "enableDdosProtection": false,
+  "etag": "W/\"e5efb33c-2100-42c1-9e7d-630e922c0a42\"",
+  "id": "/subscriptions/71d310bf-1718-4d11-87d1-99a7d4e2053f/resourceGroups/Student-RG-1344549/providers/Microsoft.Network/virtualNetworks/Student-1344549-vnet",
+  "location": "canadacentral",
+  "name": "Student-1344549-vnet",
+  "provisioningState": "Succeeded",
+  "resourceGroup": "Student-RG-1344549",
+  "resourceGuid": "9c26c414-2551-4eec-a668-391bc0cd86ca",
+  "subnets": [
+    {
+      "addressPrefix": "10.4.146.0/24",
+      "delegations": [],
+      "etag": "W/\"e5efb33c-2100-42c1-9e7d-630e922c0a42\"",
+      "id": "/subscriptions/71d310bf-1718-4d11-87d1-99a7d4e2053f/resourceGroups/Student-RG-1344549/providers/Microsoft.Network/virtualNetworks/Student-1344549-vnet/subnets/Virtual-Desktop-Client",
+      "name": "Virtual-Desktop-Client",
+      "privateEndpointNetworkPolicies": "Enabled",
+      "privateLinkServiceNetworkPolicies": "Enabled",
+      "provisioningState": "Succeeded",
+      "resourceGroup": "Student-RG-1344549",
+      "routeTable": {
+        "id": "/subscriptions/71d310bf-1718-4d11-87d1-99a7d4e2053f/resourceGroups/Student-RG-1344549/providers/Microsoft.Network/routeTables/RT-25",
+        "resourceGroup": "Student-RG-1344549"
+      },
+      "type": "Microsoft.Network/virtualNetworks/subnets"
+    }
+  ],
+  "tags": {
+    "DeploymentId": "1344549",
+    "LaunchId": "40790",
+    "LaunchType": "ON_DEMAND_LAB",
+    "TemplateId": "7633",
+    "TenantId": "353"
+  },
+  "type": "Microsoft.Network/virtualNetworks",
+  "virtualNetworkPeerings": [
+    {
+      "allowForwardedTraffic": true,
+      "allowGatewayTransit": false,
+      "allowVirtualNetworkAccess": true,
+      "doNotVerifyRemoteGateways": false,
+      "etag": "W/\"e5efb33c-2100-42c1-9e7d-630e922c0a42\"",
+      "id": "/subscriptions/71d310bf-1718-4d11-87d1-99a7d4e2053f/resourceGroups/Student-RG-1344549/providers/Microsoft.Network/virtualNetworks/Student-1344549-vnet/virtualNetworkPeerings/Student-Bastion1344549",
+      "name": "Student-Bastion1344549",
+      "peeringState": "Connected",
+      "peeringSyncLevel": "FullyInSync",
+      "provisioningState": "Succeeded",
+      "remoteAddressSpace": {
+        "addressPrefixes": [
+          "172.16.0.0/16"
+        ]
+      },
+      "remoteVirtualNetwork": {
+        "id": "/subscriptions/71d310bf-1718-4d11-87d1-99a7d4e2053f/resourceGroups/Bastion_RG/providers/Microsoft.Network/virtualNetworks/Bastion-Vnet",
+        "resourceGroup": "Bastion_RG"
+      },
+      "remoteVirtualNetworkAddressSpace": {
+        "addressPrefixes": [
+          "172.16.0.0/16"
+        ]
+      },
+      "remoteVirtualNetworkEncryption": {
+        "enabled": false,
+        "enforcement": "AllowUnencrypted"
+      },
+      "resourceGroup": "Student-RG-1344549",
+      "resourceGuid": "4cdde081-c856-038a-33d9-8ff5ae0e0ad1",
+      "type": "Microsoft.Network/virtualNetworks/virtualNetworkPeerings",
+      "useRemoteGateways": false
+    },
+    {
+      "allowForwardedTraffic": false,
+      "allowGatewayTransit": false,
+      "allowVirtualNetworkAccess": true,
+      "doNotVerifyRemoteGateways": false,
+      "etag": "W/\"e5efb33c-2100-42c1-9e7d-630e922c0a42\"",
+      "id": "/subscriptions/71d310bf-1718-4d11-87d1-99a7d4e2053f/resourceGroups/Student-RG-1344549/providers/Microsoft.Network/virtualNetworks/Student-1344549-vnet/virtualNetworkPeerings/Student1344549-Router25",
+      "name": "Student1344549-Router25",
+      "peeringState": "Disconnected",
+      "peeringSyncLevel": "FullyInSync",
+      "provisioningState": "Succeeded",
+      "remoteAddressSpace": {
+        "addressPrefixes": [
+          "192.168.25.0/27"
+        ]
+      },
+      "remoteVirtualNetwork": {
+        "id": "/subscriptions/71d310bf-1718-4d11-87d1-99a7d4e2053f/resourceGroups/Student-RG-1344549/providers/Microsoft.Network/virtualNetworks/Router-25",
+        "resourceGroup": "Student-RG-1344549"
+      },
+      "remoteVirtualNetworkAddressSpace": {
+        "addressPrefixes": [
+          "192.168.25.0/27"
+        ]
+      },
+      "remoteVirtualNetworkEncryption": {
+        "enabled": false,
+        "enforcement": "AllowUnencrypted"
+      },
+      "resourceGroup": "Student-RG-1344549",
+      "resourceGuid": "783a107d-3693-06d4-0173-4c51f3a41d6e",
+      "type": "Microsoft.Network/virtualNetworks/virtualNetworkPeerings",
+      "useRemoteGateways": false
+    }
+  ]
+}

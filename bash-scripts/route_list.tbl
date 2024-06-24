@@ -1,0 +1,4 @@
+AddressPrefix    HasBgpOverride    Name             NextHopIpAddress    NextHopType       ProvisioningState    ResourceGroup
+---------------  ----------------  ---------------  ------------------  ----------------  -------------------  ------------------
+172.17.25.0/27   False             Route-to-Server  192.168.25.4        VirtualAppliance  Succeeded            Student-RG-1344549
+10.4.146.0/24    False             Route-to-Client  192.168.25.4        VirtualAppliance  Succeeded            Student-RG-1344549
